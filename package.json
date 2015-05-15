@@ -1,0 +1,30 @@
+{
+  "name": "is-lowercase",
+  "version": "0.0.0",
+  "description": "Check if a string is all lowercase",
+  "license": "MIT",
+  "repository": "arthurvr/is-lowercase",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "lowercase",
+    "string",
+    "letter",
+    "check"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
