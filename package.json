@@ -1,7 +1,7 @@
 {
   "name": "is-lowercase",
   "version": "1.0.0",
-  "description": "Check if a string is all lowercase",
+  "description": "Check if a string is lowercase",
   "license": "MIT",
   "repository": "arthurvr/is-lowercase",
   "author": {

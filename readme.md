@@ -1,6 +1,6 @@
 # is-lowercase [![Build Status](https://travis-ci.org/arthurvr/is-lowercase.svg?branch=master)](https://travis-ci.org/arthurvr/is-lowercase)
 
-> Check if a string is all lowercase
+> Check if a string is lowercase
 
 
 ## Install
