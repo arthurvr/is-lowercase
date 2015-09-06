@@ -1,21 +1,26 @@
 'use strict';
-var assert = require('assert');
+var test = require('ava');
 var isLowercase = require('./');
 
-it('should test if a string is lowercase', function () {
-	assert(isLowercase('unicorns'));
-	assert(!isLowercase('Unicorns'));
-	assert(!isLowercase('unicOrns'));
-	assert(!isLowercase('A'));
-	assert(isLowercase('a'));
-	assert(isLowercase('1'));
-	assert(isLowercase('💩'));
+test('should test if a string is lowercase', function (t) {
+	t.true(isLowercase('unicorns'));
+	t.true(isLowercase('a'));
+	t.true(isLowercase('1'));
+	t.true(isLowercase('💩'));
+
+	t.false(isLowercase('Unicorns'));
+	t.false(isLowercase('unicOrns'));
+	t.false(isLowercase('A'));
+
+	t.end();
 });
 
-it('should throw when passing non-string input', function () {
+test('should throw when passing non-string input', function (t) {
 	[function () {}, null, undefined, 23].forEach(function (input) {
-		assert.throws(function () {
+		t.throws(function () {
 			isLowercase(input);
 		});
 	});
+
+	t.end();
 });
