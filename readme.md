@@ -13,7 +13,7 @@ $ npm install --save is-lowercase
 ## Usage
 
 ```js
-var isLowercase = require('is-lowercase');
+const isLowercase = require('is-lowercase');
 
 isLowercase('unicorns');
 //=> true
